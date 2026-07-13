@@ -10,8 +10,6 @@ import { Badge } from "@/components/ui/badge";
 
 import AppCard from "@/components/shared/AppCard";
 
-import { business } from "@/mock/dashboard/business";
-
 import DownloadReportButton from "./DownloadReportButton";
 import BusinessMeta from "./BusinessMeta";
 

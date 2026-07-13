@@ -11,7 +11,7 @@ import AssessmentStepper from "./AssessmentStepper";
 import AssessmentFooter from "./AssessmentFooter";
 import InputMethodSelector from "./InputMethodSelector";
 import JsonUploader from "./JsonUploader";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import SectionContainer from "./SectionContainer";
 import { useNavigate } from "react-router-dom";
 

@@ -1,7 +1,3 @@
-import { Bot } from "lucide-react";
-
-import { copilot } from "@/mock/dashboard/copilot";
-
 import InsightCards from "./InsightCards";
 import aiBot from "@/assets/assistant.png";
 

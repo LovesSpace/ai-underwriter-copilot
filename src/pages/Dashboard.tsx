@@ -82,8 +82,8 @@ const Dashboard = () => {
 
           <div className="mt-4">
             <DataCoverageCard
-              summary={assessmentResponse.summary}
-              componentScores={assessmentResponse.component_scores}
+              // summary={assessmentResponse.summary}
+              // componentScores={assessmentResponse.component_scores}
             />
           </div>
 

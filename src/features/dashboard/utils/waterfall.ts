@@ -1,5 +1,3 @@
-import { scoreBreakdown } from "@/mock/dashboard/scoreBreakdown";
-
 export interface WaterfallBar {
     label: string;
     value: number;

@@ -26,10 +26,10 @@ const WaterfallChart = ({
     // const { bars, total, minValue, maxValue } = buildWaterfallData(totalScore);
 
     const { bars, total, minValue, maxValue } =
-    buildWaterfallData(
-        totalScore,
-        componentScores,
-    );
+        buildWaterfallData(
+            totalScore,
+            componentScores,
+        );
 
 
     const categories = [
@@ -91,8 +91,9 @@ const WaterfallChart = ({
         const start = api.coord([params.dataIndex, data.start]);
         const end = api.coord([params.dataIndex, data.end]);
 
-        const size = api.size([1, 0]);
-        const barWidth = size[0] * 0.45;
+        const size = api.size?.([1, 0]) as number[] | undefined;
+
+        const barWidth = (size?.[0] ?? 20) * 0.45;
 
         const x = start[0] - barWidth / 2;
 

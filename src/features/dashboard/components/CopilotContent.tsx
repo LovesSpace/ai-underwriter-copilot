@@ -1,10 +1,6 @@
 import type { CopilotTab } from "@/types/copilot";
 
-import { copilot } from "@/mock/dashboard/copilot";
-
 import OverviewTab from "./OverviewTab";
-
-import InsightCards from "./InsightCards";
 
 interface Props {
   activeTab: CopilotTab;
