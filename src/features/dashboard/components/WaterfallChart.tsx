@@ -310,7 +310,7 @@ const WaterfallChart = ({
             option={option}
 
             style={{
-                height: 260,
+                height: 350,
                 width: "100%",
             }}
 
