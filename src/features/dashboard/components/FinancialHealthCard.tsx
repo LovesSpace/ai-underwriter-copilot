@@ -11,6 +11,16 @@ interface FinancialHealthCardProps {
 const FinancialHealthCard = ({
   summary,
 }: FinancialHealthCardProps) => {
+
+  const formatToLakhs = (amount: number) => {
+    const lakhs = amount / 100000;
+
+    return `₹${lakhs.toLocaleString("en-IN", {
+      minimumFractionDigits: lakhs % 1 === 0 ? 0 : 1,
+      maximumFractionDigits: 2,
+    })} Lakh`;
+  };
+
   return (
     <AppCard className="space-y-3 p-3">
 
@@ -109,7 +119,7 @@ const FinancialHealthCard = ({
             </p>
 
             <p className="text-2xl font-bold text-slate-900 mb-1">
-              {summary.suggested_loan_amount}
+              {formatToLakhs(summary.suggested_loan_amount)}
             </p>
 
           </div>
@@ -124,7 +134,8 @@ const FinancialHealthCard = ({
             </p>
 
             <p className="text-[18px] font-semibold text-slate-900 mb-1">
-              {summary.loan_limit_min} - {summary.loan_limit_max}
+              {formatToLakhs(summary.loan_limit_min)} -{" "}
+              {formatToLakhs(summary.loan_limit_max)}
             </p>
 
           </div>
