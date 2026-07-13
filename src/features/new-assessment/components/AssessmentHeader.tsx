@@ -1,12 +1,6 @@
-import { Building2, X } from "lucide-react";
+import { Building2 } from "lucide-react";
 
-interface AssessmentHeaderProps {
-  onClose?: () => void;
-}
-
-const AssessmentHeader = ({
-  onClose,
-}: AssessmentHeaderProps) => {
+const AssessmentHeader = () => {
 
   return (
 

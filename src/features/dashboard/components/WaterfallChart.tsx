@@ -57,7 +57,7 @@ const WaterfallChart = ({
     // const yAxisMin = Math.max(0, Math.floor(minValue / 20) * 20);
     // const yAxisMax = Math.ceil(Math.max(maxValue, total) / 20) * 20 + 20;
 
-    const { min: yAxisMin, max: yAxisMax, step: yAxisStep } = niceScale(
+    const { min: yAxisMin, max: yAxisMax,} = niceScale(
         minValue,
         Math.max(maxValue, total),
         5

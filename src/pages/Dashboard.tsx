@@ -9,7 +9,6 @@ import ScoreExplanationCard from "@/features/dashboard/components/ScoreExplanati
 import TrendsCard from "@/features/dashboard/components/TrendsCard";
 import DataCoverageCard from "@/features/dashboard/components/DataCoverageCard";
 import AICopilotChatCard from "@/features/dashboard/components/AICopilotChatCard";
-import { financialHealth } from "@/mock/dashboard/financialHealth"
 
 const Dashboard = () => {
 

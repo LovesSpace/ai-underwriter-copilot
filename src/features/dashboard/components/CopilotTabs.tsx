@@ -5,8 +5,6 @@ import {
   TriangleAlert,
 } from "lucide-react";
 
-import { Bot } from "lucide-react";
-
 import type { CopilotTab } from "@/types/copilot";
 
 interface CopilotTabsProps {
